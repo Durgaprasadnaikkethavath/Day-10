@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+  </head>
+  <body>
+    <h1>Strings</h1>
+    <p></p>
+
+    <script>
+      // string
+
+      let firstName = "kethavath";
+      let secondName = "Durga Prasad naik";
+      const fullName = firstName + " " + secondName;
+      console.log(fullName);
+
+      const fruits = ["apples", "oranges", "lemon", "Banana", "Mango"];
+      console.log(fruits);
+      const fruits1 = fruits.slice(0, 2);
+      console.log(fruits1);
+
+      // const fruitss = ["apples", "oranges", "lemon", "Banana", "Mango"];
+      // const fruits2 = fruitss.subString(0, 2);
+      // console.log(fruits2);
+
+      let fName = "       peter";
+      console.log(fName);
+      console.log(fName.length);
+
+      let results = fName.trim();
+      console.log(results);
+
+      // string literals
+
+      const fName1 = "peter";
+      const fName2 = "parker";
+      const fName3 = new String("peter");
+      const fName4 = new String("parker");
+
+      const compare = fName1 == fName3;
+      console.log(compare);
+
+      const compare2 = fName1 === fName3;
+      console.log(compare2);
+
+      const compare1 = fName2 == fName4;
+      console.log(compare1);
+
+      const compare4 = fName2 === fName4;
+      console.log(compare4);
+
+      console.log("welcome to true or false");
+
+      let a = 9;
+      let b = "9";
+      let c = a == b;
+      let d = a === b;
+      console.log(c);
+      console.log(d);
+    </script>
+  </body>
+</html>

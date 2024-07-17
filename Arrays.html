@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays Methods</title>
+  </head>
+  <body>
+    <h1>Arrays Methods</h1>
+    <p id="demo"></p>
+    <p id="demo-1"></p>
+    <p id="demo-2"></p>
+    <script>
+      const Arrays = [1, 2, 3, 4, 5, "Durga", "Prasad", "naik"];
+      console.log(Arrays);
+
+      const circle = [10, 20, 30];
+
+      const area = circle.map((radius) => {
+        return 3.14 * radius * radius;
+      });
+      document.getElementById("demo").innerHTML = area;
+
+      const area1 = circle.forEach((radius) => {
+        return 3.14 * radius * radius;
+      });
+      document.getElementById("demo-1").innerHTML = area1;
+
+      const marks = [90, 96, 67, 56, 99, 86, 78, 46, 55];
+      const totalMarks = marks.filter((e) => {
+        return e > 90;
+      });
+      console.log(totalMarks);
+      document.getElementById("demo-2").innerHTML = totalMarks;
+    </script>
+  </body>
+</html>
